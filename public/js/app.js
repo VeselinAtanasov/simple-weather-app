@@ -5,7 +5,7 @@ const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-1');
 const messageTwo = document.querySelector('#message-2');
 
-messageOne.textContent = 'Loading...';
+messageOne.textContent = '';
 messageTwo.textContent = '';
 
 weatherForm.addEventListener('submit', (e) => {
@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
       }
 
       messageOne.textContent = data.location;
-      messageTwo.textContent = data.currentTemperature;
+      messageTwo.textContent = 'The outside temperature is about: ' + data.currentTemperature + ' deg.';
     });
   });
 })
