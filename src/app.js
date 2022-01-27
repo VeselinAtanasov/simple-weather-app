@@ -4,7 +4,7 @@ const hbs = require('hbs');
 
 const geocode = require('./utils/getGeocode');
 const forecast = require('./utils/getForecast');
-const extractForecast = require('./utils/extractForecast');
+// const extractForecast = require('./utils/extractForecast');
 
 const app = express();
 
