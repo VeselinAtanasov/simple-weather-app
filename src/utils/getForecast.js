@@ -10,6 +10,7 @@ module.exports = (longitude, latitude, callback) => {
     if (body.error) {
       return (new Error('Unable to find the location.Try Again!'));
     }
+
     return (callback(null, {
       currentTemperature: body.current.temperature,
       weatherDescriptions: body.current.weather_descriptions.join(', ')

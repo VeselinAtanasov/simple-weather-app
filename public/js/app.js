@@ -19,9 +19,8 @@ weatherForm.addEventListener('submit', (e) => {
         messageOne.textContent = data.error;
         return;
       }
-
       messageOne.textContent = data.location;
-      messageTwo.textContent = 'The outside temperature is about: ' + data.currentTemperature + ' deg.';
+      messageTwo.textContent = `The weather is ${data.weatherDescription} and  outside temperature is about: ${data.currentTemperature} deg.`;
     });
   });
 })
